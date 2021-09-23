@@ -106,6 +106,8 @@ class Host(ModelNormal):
     }
 
     read_only_vars = {
+        'id',  # noqa: E501
+        'status',  # noqa: E501
     }
 
     _composed_schemas = {}

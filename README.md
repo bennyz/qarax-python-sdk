@@ -68,11 +68,9 @@ with openapi_client.ApiClient(configuration) as api_client:
     host = Host(
         address="address_example",
         host_user="host_user_example",
-        id="id_example",
         name="name_example",
         password="password_example",
         port=1,
-        status="status_example",
     ) # Host | 
 
     try:
