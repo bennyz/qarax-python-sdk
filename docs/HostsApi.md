@@ -1,4 +1,4 @@
-# openapi_client.HostsApi
+# qarax.HostsApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,21 +21,21 @@ Create new host
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import hosts_api
-from openapi_client.model.creation_response import CreationResponse
-from openapi_client.model.error import Error
-from openapi_client.model.host import Host
+import qarax
+from qarax.api import hosts_api
+from qarax.model.host import Host
+from qarax.model.error import Error
+from qarax.model.creation_response import CreationResponse
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qarax.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with qarax.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = hosts_api.HostsApi(api_client)
     host = Host(
@@ -51,7 +51,7 @@ with openapi_client.ApiClient() as api_client:
         # Create new host
         api_response = api_instance.add_host(host)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except qarax.ApiException as e:
         print("Exception when calling HostsApi->add_host: %s\n" % e)
 ```
 
@@ -93,20 +93,20 @@ Get host by ID
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import hosts_api
-from openapi_client.model.error import Error
-from openapi_client.model.host import Host
+import qarax
+from qarax.api import hosts_api
+from qarax.model.host import Host
+from qarax.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qarax.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with qarax.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = hosts_api.HostsApi(api_client)
     host_id = "hostId_example" # str | ID of host
@@ -116,7 +116,7 @@ with openapi_client.ApiClient() as api_client:
         # Get host by ID
         api_response = api_instance.get_host(host_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except qarax.ApiException as e:
         print("Exception when calling HostsApi->get_host: %s\n" % e)
 ```
 
@@ -160,19 +160,19 @@ Install and run qarax-node on host
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import hosts_api
-from openapi_client.model.error import Error
+import qarax
+from qarax.api import hosts_api
+from qarax.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qarax.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with qarax.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = hosts_api.HostsApi(api_client)
     host_id = "hostId_example" # str | ID of host
@@ -182,7 +182,7 @@ with openapi_client.ApiClient() as api_client:
         # Install qarax node on host
         api_response = api_instance.install_host(host_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except qarax.ApiException as e:
         print("Exception when calling HostsApi->install_host: %s\n" % e)
 ```
 
@@ -226,20 +226,20 @@ Get hosts list
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import hosts_api
-from openapi_client.model.error import Error
-from openapi_client.model.host import Host
+import qarax
+from qarax.api import hosts_api
+from qarax.model.host import Host
+from qarax.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qarax.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with qarax.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = hosts_api.HostsApi(api_client)
 
@@ -248,7 +248,7 @@ with openapi_client.ApiClient() as api_client:
         # Get hosts list
         api_response = api_instance.list_hosts()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except qarax.ApiException as e:
         print("Exception when calling HostsApi->list_hosts: %s\n" % e)
 ```
 
