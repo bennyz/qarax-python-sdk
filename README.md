@@ -53,6 +53,7 @@ from qarax.api import hosts_api
 from qarax.model.creation_response import CreationResponse
 from qarax.model.error import Error
 from qarax.model.host import Host
+from qarax.model.install_response import InstallResponse
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
 configuration = qarax.Configuration(
@@ -98,6 +99,7 @@ Class | Method | HTTP request | Description
  - [CreationResponse](docs/CreationResponse.md)
  - [Error](docs/Error.md)
  - [Host](docs/Host.md)
+ - [InstallResponse](docs/InstallResponse.md)
 
 
 ## Documentation For Authorization

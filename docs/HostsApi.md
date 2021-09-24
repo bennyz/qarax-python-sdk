@@ -150,7 +150,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **install_host**
-> str install_host(host_id)
+> InstallResponse install_host(host_id)
 
 Install qarax node on host
 
@@ -162,6 +162,7 @@ Install and run qarax-node on host
 import time
 import qarax
 from qarax.api import hosts_api
+from qarax.model.install_response import InstallResponse
 from qarax.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
@@ -195,7 +196,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**str**
+[**InstallResponse**](InstallResponse.md)
 
 ### Authorization
 

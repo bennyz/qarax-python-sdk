@@ -12,3 +12,4 @@
 from qarax.model.creation_response import CreationResponse
 from qarax.model.error import Error
 from qarax.model.host import Host
+from qarax.model.install_response import InstallResponse
