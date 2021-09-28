@@ -6,6 +6,7 @@ docs/CreationResponse.md
 docs/Error.md
 docs/Host.md
 docs/HostsApi.md
+docs/InstallResponse.md
 git_push.sh
 qarax/__init__.py
 qarax/api/__init__.py
@@ -18,6 +19,7 @@ qarax/model/__init__.py
 qarax/model/creation_response.py
 qarax/model/error.py
 qarax/model/host.py
+qarax/model/install_response.py
 qarax/model_utils.py
 qarax/models/__init__.py
 qarax/rest.py
@@ -26,4 +28,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_install_response.py
 tox.ini
