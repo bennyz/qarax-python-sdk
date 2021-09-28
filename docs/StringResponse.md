@@ -1,4 +1,4 @@
-# InstallResponse
+# StringResponse
 
 
 ## Properties

@@ -12,11 +12,11 @@ import sys
 import unittest
 
 import qarax
-from qarax.model.install_response import InstallResponse
+from qarax.model.string_response import StringResponse
 
 
-class TestInstallResponse(unittest.TestCase):
-    """InstallResponse unit test stubs"""
+class TestStringResponse(unittest.TestCase):
+    """StringResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -24,10 +24,10 @@ class TestInstallResponse(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testInstallResponse(self):
-        """Test InstallResponse"""
+    def testStringResponse(self):
+        """Test StringResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = InstallResponse()  # noqa: E501
+        # model = StringResponse()  # noqa: E501
         pass
 
 

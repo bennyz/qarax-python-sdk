@@ -54,7 +54,7 @@ from qarax.model.creation_response import CreationResponse
 from qarax.model.error import Error
 from qarax.model.host import Host
 from qarax.model.host_list import HostList
-from qarax.model.install_response import InstallResponse
+from qarax.model.string_response import StringResponse
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
 configuration = qarax.Configuration(
@@ -91,6 +91,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *HostsApi* | [**add_host**](docs/HostsApi.md#add_host) | **POST** /hosts | Create new host
 *HostsApi* | [**get_host**](docs/HostsApi.md#get_host) | **GET** /hosts/{hostId} | Get host by ID
+*HostsApi* | [**healthcheck**](docs/HostsApi.md#healthcheck) | **POST** /hosts/{hostId}/healthcheck | Healthcehck a host
 *HostsApi* | [**install_host**](docs/HostsApi.md#install_host) | **POST** /hosts/{hostId}/install | Install qarax node on host
 *HostsApi* | [**list_hosts**](docs/HostsApi.md#list_hosts) | **GET** /hosts | Get hosts list
 
@@ -101,7 +102,7 @@ Class | Method | HTTP request | Description
  - [Error](docs/Error.md)
  - [Host](docs/Host.md)
  - [HostList](docs/HostList.md)
- - [InstallResponse](docs/InstallResponse.md)
+ - [StringResponse](docs/StringResponse.md)
 
 
 ## Documentation For Authorization
