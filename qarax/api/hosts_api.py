@@ -24,6 +24,7 @@ from qarax.model_utils import (  # noqa: F401
 from qarax.model.creation_response import CreationResponse
 from qarax.model.error import Error
 from qarax.model.host import Host
+from qarax.model.host_list import HostList
 from qarax.model.install_response import InstallResponse
 
 
@@ -426,7 +427,7 @@ class HostsApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                [Host]
+                HostList
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -453,7 +454,7 @@ class HostsApi(object):
 
         self.list_hosts = _Endpoint(
             settings={
-                'response_type': ([Host],),
+                'response_type': (HostList,),
                 'auth': [],
                 'endpoint_path': '/hosts',
                 'operation_id': 'list_hosts',
