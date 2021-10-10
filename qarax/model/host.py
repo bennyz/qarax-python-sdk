@@ -55,6 +55,14 @@ class Host(ModelNormal):
     """
 
     allowed_values = {
+        ('status',): {
+            'UP': "up",
+            'DOWN': "down",
+            'UNKNOWN': "unknown",
+            'INITIALIZING': "initializing",
+            'INSTALLING': "installing",
+            'INSTALLATION_FAILED': "installation_failed",
+        },
     }
 
     validations = {
