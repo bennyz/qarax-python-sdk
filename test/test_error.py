@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.error import Error
+import qarax
+from qarax.model.error import Error
 
 
 class TestError(unittest.TestCase):

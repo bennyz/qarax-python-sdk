@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.creation_response import CreationResponse
+import qarax
+from qarax.model.creation_response import CreationResponse
 
 
 class TestCreationResponse(unittest.TestCase):

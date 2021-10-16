@@ -12,13 +12,11 @@ import sys
 import unittest
 
 import qarax
-from qarax.model.host import Host
-globals()['Host'] = Host
-from qarax.model.host_list import HostList
+from qarax.model.vm import Vm
 
 
-class TestHostList(unittest.TestCase):
-    """HostList unit test stubs"""
+class TestVm(unittest.TestCase):
+    """Vm unit test stubs"""
 
     def setUp(self):
         pass
@@ -26,10 +24,10 @@ class TestHostList(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testHostList(self):
-        """Test HostList"""
+    def testVm(self):
+        """Test Vm"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = HostList()  # noqa: E501
+        # model = Vm()  # noqa: E501
         pass
 
 

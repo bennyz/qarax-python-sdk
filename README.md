@@ -53,7 +53,6 @@ from qarax.api import hosts_api
 from qarax.model.creation_response import CreationResponse
 from qarax.model.error import Error
 from qarax.model.host import Host
-from qarax.model.host_list import HostList
 from qarax.model.string_response import StringResponse
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
@@ -94,6 +93,11 @@ Class | Method | HTTP request | Description
 *HostsApi* | [**healthcheck**](docs/HostsApi.md#healthcheck) | **POST** /hosts/{hostId}/healthcheck | Healthcehck a host
 *HostsApi* | [**install_host**](docs/HostsApi.md#install_host) | **POST** /hosts/{hostId}/install | Install qarax node on host
 *HostsApi* | [**list_hosts**](docs/HostsApi.md#list_hosts) | **GET** /hosts | Get hosts list
+*VMsApi* | [**add_vm**](docs/VMsApi.md#add_vm) | **POST** /vms | Create new VM
+*VMsApi* | [**get_vm**](docs/VMsApi.md#get_vm) | **GET** /vms/{vmId} | Get VM by ID
+*VMsApi* | [**list_vms**](docs/VMsApi.md#list_vms) | **GET** /vms | Get VM list
+*VMsApi* | [**start_vm**](docs/VMsApi.md#start_vm) | **POST** /vms/{vmId}/start | Start a VM
+*VMsApi* | [**stop_vm**](docs/VMsApi.md#stop_vm) | **POST** /vms/{vmId}/stop | Stop a VM
 
 
 ## Documentation For Models
@@ -101,8 +105,8 @@ Class | Method | HTTP request | Description
  - [CreationResponse](docs/CreationResponse.md)
  - [Error](docs/Error.md)
  - [Host](docs/Host.md)
- - [HostList](docs/HostList.md)
  - [StringResponse](docs/StringResponse.md)
+ - [Vm](docs/Vm.md)
 
 
 ## Documentation For Authorization

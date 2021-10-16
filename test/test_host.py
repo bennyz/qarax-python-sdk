@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.host import Host
+import qarax
+from qarax.model.host import Host
 
 
 class TestHost(unittest.TestCase):

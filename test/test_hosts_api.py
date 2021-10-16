@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.hosts_api import HostsApi  # noqa: E501
+import qarax
+from qarax.api.hosts_api import HostsApi  # noqa: E501
 
 
 class TestHostsApi(unittest.TestCase):
@@ -34,6 +34,13 @@ class TestHostsApi(unittest.TestCase):
         """Test case for get_host
 
         Get host by ID  # noqa: E501
+        """
+        pass
+
+    def test_healthcheck(self):
+        """Test case for healthcheck
+
+        Healthcehck a host  # noqa: E501
         """
         pass
 
