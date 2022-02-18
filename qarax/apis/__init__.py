@@ -15,4 +15,5 @@
 
 # Import APIs into API package:
 from qarax.api.hosts_api import HostsApi
+from qarax.api.storage_api import StorageApi
 from qarax.api.vms_api import VMsApi

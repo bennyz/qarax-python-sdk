@@ -20,6 +20,7 @@ Create new VM
 
 ### Example
 
+
 ```python
 import time
 import qarax
@@ -39,17 +40,7 @@ configuration = qarax.Configuration(
 with qarax.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = vms_api.VMsApi(api_client)
-    vm = Vm(
-        name="name_example",
-        host_id="host_id_example",
-        vcpu=1,
-        memory=1,
-        ip_address="ip_address_example",
-        mac_address="mac_address_example",
-        network_mode="dhcp",
-        kernel_parameters="kernel_parameters_example",
-        kernel="kernel_example",
-    ) # Vm | 
+    vm = Vm(None) # Vm | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -82,6 +73,7 @@ No authorization required
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | successful operation |  -  |
@@ -95,6 +87,7 @@ No authorization required
 Get VM by ID
 
 ### Example
+
 
 ```python
 import time
@@ -147,6 +140,7 @@ No authorization required
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | successful operation |  -  |
@@ -162,6 +156,7 @@ Get VM list
 Get VM list
 
 ### Example
+
 
 ```python
 import time
@@ -210,6 +205,7 @@ No authorization required
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | successful operation |  -  |
@@ -225,6 +221,7 @@ Start a VM
 Start a VM on an available host
 
 ### Example
+
 
 ```python
 import time
@@ -277,6 +274,7 @@ No authorization required
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | successful operation |  -  |
@@ -290,6 +288,7 @@ No authorization required
 Stop a VM
 
 ### Example
+
 
 ```python
 import time
@@ -342,6 +341,7 @@ No authorization required
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | successful operation |  -  |

@@ -20,6 +20,7 @@ Create new host
 
 ### Example
 
+
 ```python
 import time
 import qarax
@@ -39,13 +40,7 @@ configuration = qarax.Configuration(
 with qarax.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = hosts_api.HostsApi(api_client)
-    host = Host(
-        address="address_example",
-        host_user="host_user_example",
-        name="name_example",
-        password="password_example",
-        port=1,
-    ) # Host | 
+    host = Host(None) # Host | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -78,6 +73,7 @@ No authorization required
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | successful operation |  -  |
@@ -91,6 +87,7 @@ No authorization required
 Get host by ID
 
 ### Example
+
 
 ```python
 import time
@@ -143,6 +140,7 @@ No authorization required
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | successful operation |  -  |
@@ -158,6 +156,7 @@ Healthcehck a host
 Runs healthcheck on a host, currently just ensures gRPC connectivity
 
 ### Example
+
 
 ```python
 import time
@@ -210,6 +209,7 @@ No authorization required
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | successful operation |  -  |
@@ -225,6 +225,7 @@ Install qarax node on host
 Install and run qarax-node on host
 
 ### Example
+
 
 ```python
 import time
@@ -277,6 +278,7 @@ No authorization required
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | successful operation |  -  |
@@ -292,6 +294,7 @@ Get hosts list
 Get hosts list
 
 ### Example
+
 
 ```python
 import time
@@ -340,6 +343,7 @@ No authorization required
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | successful operation |  -  |

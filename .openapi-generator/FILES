@@ -1,12 +1,14 @@
 .gitignore
 .gitlab-ci.yml
-.openapi-generator-ignore
 .travis.yml
 README.md
 docs/CreationResponse.md
 docs/Error.md
 docs/Host.md
 docs/HostsApi.md
+docs/Storage.md
+docs/StorageApi.md
+docs/StorageConfig.md
 docs/StringResponse.md
 docs/VMsApi.md
 docs/Vm.md
@@ -14,6 +16,7 @@ git_push.sh
 qarax/__init__.py
 qarax/api/__init__.py
 qarax/api/hosts_api.py
+qarax/api/storage_api.py
 qarax/api/vms_api.py
 qarax/api_client.py
 qarax/apis/__init__.py
@@ -23,6 +26,8 @@ qarax/model/__init__.py
 qarax/model/creation_response.py
 qarax/model/error.py
 qarax/model/host.py
+qarax/model/storage.py
+qarax/model/storage_config.py
 qarax/model/string_response.py
 qarax/model/vm.py
 qarax/model_utils.py
@@ -33,11 +38,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_creation_response.py
-test/test_error.py
-test/test_host.py
-test/test_hosts_api.py
-test/test_string_response.py
-test/test_vm.py
-test/test_vms_api.py
+test/test_storage.py
+test/test_storage_api.py
+test/test_storage_config.py
 tox.ini
