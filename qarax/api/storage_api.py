@@ -24,6 +24,7 @@ from qarax.model_utils import (  # noqa: F401
 from qarax.model.creation_response import CreationResponse
 from qarax.model.error import Error
 from qarax.model.storage import Storage
+from qarax.model.storage_list_response import StorageListResponse
 
 
 class StorageApi(object):
@@ -138,7 +139,7 @@ class StorageApi(object):
         )
         self.list_storage_endpoint = _Endpoint(
             settings={
-                'response_type': ([Storage],),
+                'response_type': (StorageListResponse,),
                 'auth': [],
                 'endpoint_path': '/storage',
                 'operation_id': 'list_storage',
@@ -377,7 +378,7 @@ class StorageApi(object):
             async_req (bool): execute request asynchronously
 
         Returns:
-            [Storage]
+            StorageListResponse
                 If the method is called asynchronously, returns the request
                 thread.
         """

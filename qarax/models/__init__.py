@@ -15,5 +15,6 @@ from qarax.model.host import Host
 from qarax.model.host_list_response import HostListResponse
 from qarax.model.storage import Storage
 from qarax.model.storage_config import StorageConfig
+from qarax.model.storage_list_response import StorageListResponse
 from qarax.model.string_response import StringResponse
 from qarax.model.vm import Vm

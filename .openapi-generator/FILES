@@ -10,6 +10,7 @@ docs/HostsApi.md
 docs/Storage.md
 docs/StorageApi.md
 docs/StorageConfig.md
+docs/StorageListResponse.md
 docs/StringResponse.md
 docs/VMsApi.md
 docs/Vm.md
@@ -30,6 +31,7 @@ qarax/model/host.py
 qarax/model/host_list_response.py
 qarax/model/storage.py
 qarax/model/storage_config.py
+qarax/model/storage_list_response.py
 qarax/model/string_response.py
 qarax/model/vm.py
 qarax/model_utils.py
@@ -40,5 +42,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_host_list_response.py
+test/test_storage_list_response.py
 tox.ini

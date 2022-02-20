@@ -106,6 +106,7 @@ Class | Method | HTTP request | Description
  - [HostListResponse](docs/HostListResponse.md)
  - [Storage](docs/Storage.md)
  - [StorageConfig](docs/StorageConfig.md)
+ - [StorageListResponse](docs/StorageListResponse.md)
  - [StringResponse](docs/StringResponse.md)
  - [Vm](docs/Vm.md)
 

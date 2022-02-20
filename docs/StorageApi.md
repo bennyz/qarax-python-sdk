@@ -147,7 +147,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_storage**
-> [Storage] list_storage()
+> StorageListResponse list_storage()
 
 Get storage list
 
@@ -160,7 +160,7 @@ Get storage list
 import time
 import qarax
 from qarax.api import storage_api
-from qarax.model.storage import Storage
+from qarax.model.storage_list_response import StorageListResponse
 from qarax.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
@@ -190,7 +190,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**[Storage]**](Storage.md)
+[**StorageListResponse**](StorageListResponse.md)
 
 ### Authorization
 
