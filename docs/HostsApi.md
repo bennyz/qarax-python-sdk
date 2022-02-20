@@ -287,7 +287,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_hosts**
-> [Host] list_hosts()
+> HostListResponse list_hosts()
 
 Get hosts list
 
@@ -300,7 +300,7 @@ Get hosts list
 import time
 import qarax
 from qarax.api import hosts_api
-from qarax.model.host import Host
+from qarax.model.host_list_response import HostListResponse
 from qarax.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
@@ -330,7 +330,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**[Host]**](Host.md)
+[**HostListResponse**](HostListResponse.md)
 
 ### Authorization
 

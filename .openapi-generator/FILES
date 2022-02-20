@@ -5,6 +5,7 @@ README.md
 docs/CreationResponse.md
 docs/Error.md
 docs/Host.md
+docs/HostListResponse.md
 docs/HostsApi.md
 docs/Storage.md
 docs/StorageApi.md
@@ -26,6 +27,7 @@ qarax/model/__init__.py
 qarax/model/creation_response.py
 qarax/model/error.py
 qarax/model/host.py
+qarax/model/host_list_response.py
 qarax/model/storage.py
 qarax/model/storage_config.py
 qarax/model/string_response.py
@@ -38,7 +40,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_storage.py
-test/test_storage_api.py
-test/test_storage_config.py
+test/test_host_list_response.py
 tox.ini

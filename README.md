@@ -53,6 +53,7 @@ from qarax.api import hosts_api
 from qarax.model.creation_response import CreationResponse
 from qarax.model.error import Error
 from qarax.model.host import Host
+from qarax.model.host_list_response import HostListResponse
 from qarax.model.string_response import StringResponse
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
@@ -102,6 +103,7 @@ Class | Method | HTTP request | Description
  - [CreationResponse](docs/CreationResponse.md)
  - [Error](docs/Error.md)
  - [Host](docs/Host.md)
+ - [HostListResponse](docs/HostListResponse.md)
  - [Storage](docs/Storage.md)
  - [StorageConfig](docs/StorageConfig.md)
  - [StringResponse](docs/StringResponse.md)

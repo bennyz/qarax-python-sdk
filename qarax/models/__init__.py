@@ -12,6 +12,7 @@
 from qarax.model.creation_response import CreationResponse
 from qarax.model.error import Error
 from qarax.model.host import Host
+from qarax.model.host_list_response import HostListResponse
 from qarax.model.storage import Storage
 from qarax.model.storage_config import StorageConfig
 from qarax.model.string_response import StringResponse
